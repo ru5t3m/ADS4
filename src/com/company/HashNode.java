@@ -18,4 +18,12 @@ public class HashNode<K, V> {
         return value;
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "key=" + key +
+                ", value=" + value +
+                '}';
+    }
+
 }
