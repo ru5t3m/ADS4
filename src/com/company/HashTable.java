@@ -15,5 +15,8 @@ public class HashTable<K, V> {
         this.M = m;
         chain = new LinkedList[M];
     }
+    private int hash(K key) {
+        return key.hashCode() % M;
+    }
 
 }
